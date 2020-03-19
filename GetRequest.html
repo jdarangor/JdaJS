@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script>
+
+const Http = new XMLHttpRequest();
+const url='https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6';
+
+
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+  console.log(Http.responseText) //, Access-Control-Allow-Origin: url)
+}
+</script>
+</body>
+</html>
